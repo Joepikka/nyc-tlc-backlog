@@ -1,0 +1,7 @@
+{
+  "url": "https://data.cityofnewyork.us/resource/erm2-nwe9",
+  "rows": 17341,
+  "utc": "2026-11-19T12:48:44.831582+00:00",
+  "sha256": "5cc21c5438f78e8d083157f3784738b4fbf88203654fb7f7780b949f5fda9e6e",
+  "citywide_manifest": "data/citywide-manifest.json"
+}

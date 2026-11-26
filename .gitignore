@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+data/*.csv
+data/*.gz
+data/*.duckdb*
+data/*.part
+data/citywide/
+node_modules/
+.pbi/
+.vercel/
+.env
+.env.*
+dist/

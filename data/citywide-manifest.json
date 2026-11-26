@@ -1,0 +1,131 @@
+{
+  "url": "https://data.cityofnewyork.us/resource/erm2-nwe9",
+  "utc": "2026-11-19T12:48:44.831582+00:00",
+  "created_from_inclusive": "2024-01-01",
+  "created_to_exclusive": "2025-04-01",
+  "rows": 4341535,
+  "agencies": 15,
+  "bytes": 3024008426,
+  "partitions": [
+    {
+      "month": "2024-01",
+      "rows": 287186,
+      "bytes": 197720601,
+      "sha256": "9e242bb30fd66600d210ae3ad68028cf3676aaff61fc1c20b7aadc9e6de9469e",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-01-01%27+AND+created_date+%3C+%272024-02-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:38:24.849869+00:00"
+    },
+    {
+      "month": "2024-02",
+      "rows": 240436,
+      "bytes": 164563022,
+      "sha256": "ac819acac750371b82cadbaa5bc0f39a20b8cf56b6a84566cb2d29fe50348235",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-02-01%27+AND+created_date+%3C+%272024-03-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:32:19.461345+00:00"
+    },
+    {
+      "month": "2024-03",
+      "rows": 266604,
+      "bytes": 182259158,
+      "sha256": "36097f1ac5a785df814954c97890f41c33c0b046fb57620782079aa7bbcf363a",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-03-01%27+AND+created_date+%3C+%272024-04-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:32:52.879809+00:00"
+    },
+    {
+      "month": "2024-04",
+      "rows": 267565,
+      "bytes": 183984394,
+      "sha256": "2d29c663d83341dccab379206c9cb45d2deb013e34998ae64eb40a0ab6da7326",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-04-01%27+AND+created_date+%3C+%272024-05-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:37:29.754900+00:00"
+    },
+    {
+      "month": "2024-05",
+      "rows": 283982,
+      "bytes": 193708008,
+      "sha256": "8b13fd84a365ef8a7f049a6bd2113a203e11f652d323107fc66dd2ef24273409",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-05-01%27+AND+created_date+%3C+%272024-06-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:33:09.617867+00:00"
+    },
+    {
+      "month": "2024-06",
+      "rows": 306200,
+      "bytes": 207911014,
+      "sha256": "e9efdb40efe70f0288c6d0ee553022edd2a47f19031cdb031086ec1b37241961",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-06-01%27+AND+created_date+%3C+%272024-07-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:36:01.163018+00:00"
+    },
+    {
+      "month": "2024-07",
+      "rows": 298936,
+      "bytes": 202949604,
+      "sha256": "e6dcdf61cd8a51eb22cfeecb4064ddc9127438fc32711c65f14cdf92b085b085",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-07-01%27+AND+created_date+%3C+%272024-08-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:36:39.329570+00:00"
+    },
+    {
+      "month": "2024-08",
+      "rows": 284823,
+      "bytes": 192646555,
+      "sha256": "494735f295160211f7ef9ff9bbf443cad42474a96e1bc85f75e5a6bbf190f1e1",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-08-01%27+AND+created_date+%3C+%272024-09-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:34:43.567677+00:00"
+    },
+    {
+      "month": "2024-09",
+      "rows": 306770,
+      "bytes": 209464181,
+      "sha256": "c276014cacb95558f8b8f15dcc43ee7080dd783cdef5489b4774b471f25b1160",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-09-01%27+AND+created_date+%3C+%272024-10-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:37:26.428319+00:00"
+    },
+    {
+      "month": "2024-10",
+      "rows": 306803,
+      "bytes": 217404374,
+      "sha256": "21c948a4b0ab7359f43f6ed450876ac2c7019ee17366bb28ddfc0e86613d4181",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-10-01%27+AND+created_date+%3C+%272024-11-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:36:47.807661+00:00"
+    },
+    {
+      "month": "2024-11",
+      "rows": 293516,
+      "bytes": 211866899,
+      "sha256": "eebe6ca395d09fbebe077e8e7eb4d6b67a67b7db14e1258524c39ca7daecb16b",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-11-01%27+AND+created_date+%3C+%272024-12-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:39:06.787210+00:00"
+    },
+    {
+      "month": "2024-12",
+      "rows": 313949,
+      "bytes": 227758459,
+      "sha256": "c12b8fc32e7b04164fc4ae1a05cfbab5554513308132229d43de660f7d8405f1",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272024-12-01%27+AND+created_date+%3C+%272025-01-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:37:45.866920+00:00"
+    },
+    {
+      "month": "2025-01",
+      "rows": 348180,
+      "bytes": 252355168,
+      "sha256": "f76eddc612a082e2d4a91281a898cd751eca19af5dd798396bce8aeee0ee9e86",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272025-01-01%27+AND+created_date+%3C+%272025-02-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:47:11.179344+00:00"
+    },
+    {
+      "month": "2025-02",
+      "rows": 255364,
+      "bytes": 181686114,
+      "sha256": "2fde812af0b453e7e3886c80a904d7f79b907b9c276af814d03be321824d1f53",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272025-02-01%27+AND+created_date+%3C+%272025-03-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:38:37.127026+00:00"
+    },
+    {
+      "month": "2025-03",
+      "rows": 281221,
+      "bytes": 197730875,
+      "sha256": "aa4330bde3c41415b550035ce2dd506e29af6160508deaccb3ce853083220c2c",
+      "url": "https://data.cityofnewyork.us/resource/erm2-nwe9.csv?%24where=created_date+%3E%3D+%272025-03-01%27+AND+created_date+%3C+%272025-04-01%27&%24order=created_date%2Cunique_key&%24limit=500000",
+      "fetched_utc": "2026-11-19T12:39:50.229867+00:00"
+    }
+  ]
+}

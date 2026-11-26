@@ -1,0 +1,16 @@
+table Dates
+	lineageTag: 54395b9a-d153-499e-80d3-2cc844270aef
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: MMM d, yyyy
+		lineageTag: 257e5053-3478-4ca1-bab5-cb690ca188cf
+		summarizeBy: none
+		sourceColumn: [Date]
+
+	partition Dates = calculated
+		mode: import
+		source = CALENDAR(DATE(2025,1,1), DATE(2025,3,31))
+

@@ -1,0 +1,14 @@
+table Problem
+	lineageTag: 8ae5a928-e0a2-4ba7-8c30-96a6a9700d81
+
+	column Problem
+		dataType: string
+		isKey
+		lineageTag: 42cff971-bf8e-434a-ae64-594eef5ae507
+		summarizeBy: none
+		sourceColumn: problem
+
+	partition Problem = m
+		mode: import
+		source = Table.Distinct(Table.SelectColumns(Daily, {"problem"}))
+

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "3a72e51f56cdf4b4bc04",
+  "position": {
+    "x": 28,
+    "y": 10,
+    "z": 0,
+    "width": 1264,
+    "height": 115,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "NYC TLC  /  Q1 2025",
+                    "textStyle": {
+                      "fontFamily": "'Segoe UI', Arial, sans-serif",
+                      "fontSize": "14pt",
+                      "color": "#087E85",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Service request backlog",
+                    "textStyle": {
+                      "fontFamily": "'Segoe UI', Arial, sans-serif",
+                      "fontSize": "29pt",
+                      "color": "#12293F",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "January 1–March 31, 2025  ·  Requests created since January 2024",
+                    "textStyle": {
+                      "fontFamily": "'Segoe UI', Arial, sans-serif",
+                      "fontSize": "11pt",
+                      "color": "#456178",
+                      "fontWeight": "normal"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

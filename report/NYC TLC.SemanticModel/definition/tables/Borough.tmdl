@@ -1,0 +1,14 @@
+table Borough
+	lineageTag: 8150209f-29f0-4f8c-a535-83b62e38090e
+
+	column Borough
+		dataType: string
+		isKey
+		lineageTag: aa8d8bad-416d-47a3-917a-001987d97f51
+		summarizeBy: none
+		sourceColumn: borough
+
+	partition Borough = m
+		mode: import
+		source = Table.Distinct(Table.SelectColumns(Daily, {"borough"}))
+

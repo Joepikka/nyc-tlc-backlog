@@ -1,0 +1,807 @@
+{
+  "snapshot": "5cc21c5438f78e8d083157f3784738b4fbf88203654fb7f7780b949f5fda9e6e",
+  "source_rows": 17341,
+  "excluded_rows": 0,
+  "quality": {
+    "missing_or_invalid_creation": 0,
+    "invalid_closure": 0,
+    "closure_before_creation": 0,
+    "missing_borough": 0,
+    "missing_problem": 0,
+    "closed_without_closure": 0,
+    "populated_due_date": 0
+  },
+  "days_reconciled": 90,
+  "problem_borough_groups_reconciled": 58,
+  "daily_rows_reconciled": 5220,
+  "quarter": {
+    "opening": 9335,
+    "arrivals": 8006,
+    "closures": 7656,
+    "backlog": 9685,
+    "aged30": 7543,
+    "net_change": 350
+  },
+  "by_problem": {
+    "Taxi Complaint": {
+      "opening": 1677,
+      "arrivals": 1757,
+      "closures": 1345,
+      "backlog": 2089,
+      "aged30": 1481,
+      "net_change": 412
+    },
+    "Taxi Report": {
+      "opening": 662,
+      "arrivals": 167,
+      "closures": 0,
+      "backlog": 829,
+      "aged30": 768,
+      "net_change": 167
+    },
+    "For Hire Vehicle Report": {
+      "opening": 503,
+      "arrivals": 95,
+      "closures": 0,
+      "backlog": 598,
+      "aged30": 565,
+      "net_change": 95
+    },
+    "Found Property": {
+      "opening": 72,
+      "arrivals": 31,
+      "closures": 2,
+      "backlog": 101,
+      "aged30": 92,
+      "net_change": 29
+    },
+    "Lost Property": {
+      "opening": 5,
+      "arrivals": 1487,
+      "closures": 1463,
+      "backlog": 29,
+      "aged30": 0,
+      "net_change": 24
+    },
+    "Green Taxi Report": {
+      "opening": 37,
+      "arrivals": 11,
+      "closures": 0,
+      "backlog": 48,
+      "aged30": 45,
+      "net_change": 11
+    },
+    "Taxi Compliment": {
+      "opening": 1,
+      "arrivals": 23,
+      "closures": 18,
+      "backlog": 6,
+      "aged30": 2,
+      "net_change": 5
+    },
+    "Taxi Licensee Complaint": {
+      "opening": 2,
+      "arrivals": 2,
+      "closures": 1,
+      "backlog": 3,
+      "aged30": 3,
+      "net_change": 1
+    },
+    "Dispatched Taxi Complaint": {
+      "opening": 4,
+      "arrivals": 0,
+      "closures": 0,
+      "backlog": 4,
+      "aged30": 4,
+      "net_change": 0
+    },
+    "FHV Licensee Complaint": {
+      "opening": 3,
+      "arrivals": 0,
+      "closures": 1,
+      "backlog": 2,
+      "aged30": 2,
+      "net_change": -1
+    },
+    "Green Taxi Complaint": {
+      "opening": 79,
+      "arrivals": 82,
+      "closures": 86,
+      "backlog": 75,
+      "aged30": 56,
+      "net_change": -4
+    },
+    "For Hire Vehicle Complaint": {
+      "opening": 6290,
+      "arrivals": 4351,
+      "closures": 4740,
+      "backlog": 5901,
+      "aged30": 4525,
+      "net_change": -389
+    }
+  },
+  "timeline": {
+    "2025-01-01": {
+      "arrivals": 63,
+      "closures": 0,
+      "backlog": 9398,
+      "aged30": 7019
+    },
+    "2025-01-02": {
+      "arrivals": 114,
+      "closures": 77,
+      "backlog": 9435,
+      "aged30": 7126
+    },
+    "2025-01-03": {
+      "arrivals": 101,
+      "closures": 151,
+      "backlog": 9385,
+      "aged30": 7085
+    },
+    "2025-01-04": {
+      "arrivals": 67,
+      "closures": 151,
+      "backlog": 9301,
+      "aged30": 7034
+    },
+    "2025-01-05": {
+      "arrivals": 69,
+      "closures": 140,
+      "backlog": 9230,
+      "aged30": 6981
+    },
+    "2025-01-06": {
+      "arrivals": 77,
+      "closures": 144,
+      "backlog": 9163,
+      "aged30": 6905
+    },
+    "2025-01-07": {
+      "arrivals": 74,
+      "closures": 162,
+      "backlog": 9075,
+      "aged30": 6839
+    },
+    "2025-01-08": {
+      "arrivals": 81,
+      "closures": 62,
+      "backlog": 9094,
+      "aged30": 6895
+    },
+    "2025-01-09": {
+      "arrivals": 85,
+      "closures": 72,
+      "backlog": 9107,
+      "aged30": 6950
+    },
+    "2025-01-10": {
+      "arrivals": 94,
+      "closures": 51,
+      "backlog": 9150,
+      "aged30": 6970
+    },
+    "2025-01-11": {
+      "arrivals": 75,
+      "closures": 64,
+      "backlog": 9161,
+      "aged30": 7019
+    },
+    "2025-01-12": {
+      "arrivals": 43,
+      "closures": 113,
+      "backlog": 9091,
+      "aged30": 6976
+    },
+    "2025-01-13": {
+      "arrivals": 89,
+      "closures": 80,
+      "backlog": 9100,
+      "aged30": 7017
+    },
+    "2025-01-14": {
+      "arrivals": 75,
+      "closures": 131,
+      "backlog": 9044,
+      "aged30": 7047
+    },
+    "2025-01-15": {
+      "arrivals": 110,
+      "closures": 94,
+      "backlog": 9060,
+      "aged30": 7057
+    },
+    "2025-01-16": {
+      "arrivals": 112,
+      "closures": 51,
+      "backlog": 9121,
+      "aged30": 7137
+    },
+    "2025-01-17": {
+      "arrivals": 105,
+      "closures": 36,
+      "backlog": 9190,
+      "aged30": 7249
+    },
+    "2025-01-18": {
+      "arrivals": 54,
+      "closures": 52,
+      "backlog": 9192,
+      "aged30": 7287
+    },
+    "2025-01-19": {
+      "arrivals": 83,
+      "closures": 107,
+      "backlog": 9168,
+      "aged30": 7308
+    },
+    "2025-01-20": {
+      "arrivals": 42,
+      "closures": 0,
+      "backlog": 9210,
+      "aged30": 7407
+    },
+    "2025-01-21": {
+      "arrivals": 64,
+      "closures": 77,
+      "backlog": 9197,
+      "aged30": 7467
+    },
+    "2025-01-22": {
+      "arrivals": 126,
+      "closures": 72,
+      "backlog": 9251,
+      "aged30": 7468
+    },
+    "2025-01-23": {
+      "arrivals": 120,
+      "closures": 23,
+      "backlog": 9348,
+      "aged30": 7522
+    },
+    "2025-01-24": {
+      "arrivals": 90,
+      "closures": 91,
+      "backlog": 9347,
+      "aged30": 7480
+    },
+    "2025-01-25": {
+      "arrivals": 80,
+      "closures": 0,
+      "backlog": 9427,
+      "aged30": 7508
+    },
+    "2025-01-26": {
+      "arrivals": 78,
+      "closures": 0,
+      "backlog": 9505,
+      "aged30": 7561
+    },
+    "2025-01-27": {
+      "arrivals": 95,
+      "closures": 47,
+      "backlog": 9553,
+      "aged30": 7589
+    },
+    "2025-01-28": {
+      "arrivals": 91,
+      "closures": 85,
+      "backlog": 9559,
+      "aged30": 7591
+    },
+    "2025-01-29": {
+      "arrivals": 85,
+      "closures": 139,
+      "backlog": 9505,
+      "aged30": 7543
+    },
+    "2025-01-30": {
+      "arrivals": 156,
+      "closures": 64,
+      "backlog": 9597,
+      "aged30": 7573
+    },
+    "2025-01-31": {
+      "arrivals": 74,
+      "closures": 18,
+      "backlog": 9653,
+      "aged30": 7611
+    },
+    "2025-02-01": {
+      "arrivals": 76,
+      "closures": 0,
+      "backlog": 9729,
+      "aged30": 7697
+    },
+    "2025-02-02": {
+      "arrivals": 68,
+      "closures": 0,
+      "backlog": 9797,
+      "aged30": 7780
+    },
+    "2025-02-03": {
+      "arrivals": 148,
+      "closures": 77,
+      "backlog": 9868,
+      "aged30": 7787
+    },
+    "2025-02-04": {
+      "arrivals": 111,
+      "closures": 82,
+      "backlog": 9897,
+      "aged30": 7800
+    },
+    "2025-02-05": {
+      "arrivals": 121,
+      "closures": 251,
+      "backlog": 9767,
+      "aged30": 7619
+    },
+    "2025-02-06": {
+      "arrivals": 82,
+      "closures": 85,
+      "backlog": 9764,
+      "aged30": 7607
+    },
+    "2025-02-07": {
+      "arrivals": 147,
+      "closures": 25,
+      "backlog": 9886,
+      "aged30": 7664
+    },
+    "2025-02-08": {
+      "arrivals": 73,
+      "closures": 0,
+      "backlog": 9959,
+      "aged30": 7726
+    },
+    "2025-02-09": {
+      "arrivals": 64,
+      "closures": 0,
+      "backlog": 10023,
+      "aged30": 7790
+    },
+    "2025-02-10": {
+      "arrivals": 86,
+      "closures": 130,
+      "backlog": 9979,
+      "aged30": 7748
+    },
+    "2025-02-11": {
+      "arrivals": 86,
+      "closures": 215,
+      "backlog": 9850,
+      "aged30": 7614
+    },
+    "2025-02-12": {
+      "arrivals": 110,
+      "closures": 58,
+      "backlog": 9902,
+      "aged30": 7631
+    },
+    "2025-02-13": {
+      "arrivals": 118,
+      "closures": 75,
+      "backlog": 9945,
+      "aged30": 7640
+    },
+    "2025-02-14": {
+      "arrivals": 106,
+      "closures": 40,
+      "backlog": 10011,
+      "aged30": 7707
+    },
+    "2025-02-15": {
+      "arrivals": 78,
+      "closures": 0,
+      "backlog": 10089,
+      "aged30": 7793
+    },
+    "2025-02-16": {
+      "arrivals": 44,
+      "closures": 0,
+      "backlog": 10133,
+      "aged30": 7879
+    },
+    "2025-02-17": {
+      "arrivals": 34,
+      "closures": 0,
+      "backlog": 10167,
+      "aged30": 7911
+    },
+    "2025-02-18": {
+      "arrivals": 66,
+      "closures": 405,
+      "backlog": 9828,
+      "aged30": 7634
+    },
+    "2025-02-19": {
+      "arrivals": 64,
+      "closures": 221,
+      "backlog": 9671,
+      "aged30": 7476
+    },
+    "2025-02-20": {
+      "arrivals": 77,
+      "closures": 84,
+      "backlog": 9664,
+      "aged30": 7466
+    },
+    "2025-02-21": {
+      "arrivals": 77,
+      "closures": 36,
+      "backlog": 9705,
+      "aged30": 7556
+    },
+    "2025-02-22": {
+      "arrivals": 53,
+      "closures": 0,
+      "backlog": 9758,
+      "aged30": 7654
+    },
+    "2025-02-23": {
+      "arrivals": 69,
+      "closures": 0,
+      "backlog": 9827,
+      "aged30": 7725
+    },
+    "2025-02-24": {
+      "arrivals": 104,
+      "closures": 43,
+      "backlog": 9888,
+      "aged30": 7777
+    },
+    "2025-02-25": {
+      "arrivals": 106,
+      "closures": 25,
+      "backlog": 9969,
+      "aged30": 7833
+    },
+    "2025-02-26": {
+      "arrivals": 164,
+      "closures": 224,
+      "backlog": 9909,
+      "aged30": 7718
+    },
+    "2025-02-27": {
+      "arrivals": 131,
+      "closures": 100,
+      "backlog": 9940,
+      "aged30": 7725
+    },
+    "2025-02-28": {
+      "arrivals": 102,
+      "closures": 46,
+      "backlog": 9996,
+      "aged30": 7764
+    },
+    "2025-03-01": {
+      "arrivals": 86,
+      "closures": 0,
+      "backlog": 10082,
+      "aged30": 7898
+    },
+    "2025-03-02": {
+      "arrivals": 95,
+      "closures": 0,
+      "backlog": 10177,
+      "aged30": 7958
+    },
+    "2025-03-03": {
+      "arrivals": 72,
+      "closures": 76,
+      "backlog": 10173,
+      "aged30": 7960
+    },
+    "2025-03-04": {
+      "arrivals": 142,
+      "closures": 244,
+      "backlog": 10071,
+      "aged30": 7801
+    },
+    "2025-03-05": {
+      "arrivals": 86,
+      "closures": 198,
+      "backlog": 9959,
+      "aged30": 7741
+    },
+    "2025-03-06": {
+      "arrivals": 99,
+      "closures": 211,
+      "backlog": 9847,
+      "aged30": 7645
+    },
+    "2025-03-07": {
+      "arrivals": 67,
+      "closures": 48,
+      "backlog": 9866,
+      "aged30": 7724
+    },
+    "2025-03-08": {
+      "arrivals": 56,
+      "closures": 0,
+      "backlog": 9922,
+      "aged30": 7783
+    },
+    "2025-03-09": {
+      "arrivals": 47,
+      "closures": 0,
+      "backlog": 9969,
+      "aged30": 7902
+    },
+    "2025-03-10": {
+      "arrivals": 151,
+      "closures": 90,
+      "backlog": 10030,
+      "aged30": 7898
+    },
+    "2025-03-11": {
+      "arrivals": 58,
+      "closures": 137,
+      "backlog": 9951,
+      "aged30": 7852
+    },
+    "2025-03-12": {
+      "arrivals": 94,
+      "closures": 62,
+      "backlog": 9983,
+      "aged30": 7859
+    },
+    "2025-03-13": {
+      "arrivals": 93,
+      "closures": 53,
+      "backlog": 10023,
+      "aged30": 7900
+    },
+    "2025-03-14": {
+      "arrivals": 68,
+      "closures": 121,
+      "backlog": 9970,
+      "aged30": 7894
+    },
+    "2025-03-15": {
+      "arrivals": 66,
+      "closures": 0,
+      "backlog": 10036,
+      "aged30": 7995
+    },
+    "2025-03-16": {
+      "arrivals": 78,
+      "closures": 0,
+      "backlog": 10114,
+      "aged30": 8078
+    },
+    "2025-03-17": {
+      "arrivals": 69,
+      "closures": 155,
+      "backlog": 10028,
+      "aged30": 8004
+    },
+    "2025-03-18": {
+      "arrivals": 108,
+      "closures": 70,
+      "backlog": 10066,
+      "aged30": 7970
+    },
+    "2025-03-19": {
+      "arrivals": 120,
+      "closures": 141,
+      "backlog": 10045,
+      "aged30": 7883
+    },
+    "2025-03-20": {
+      "arrivals": 102,
+      "closures": 128,
+      "backlog": 10019,
+      "aged30": 7851
+    },
+    "2025-03-21": {
+      "arrivals": 121,
+      "closures": 221,
+      "backlog": 9919,
+      "aged30": 7693
+    },
+    "2025-03-22": {
+      "arrivals": 64,
+      "closures": 0,
+      "backlog": 9983,
+      "aged30": 7746
+    },
+    "2025-03-23": {
+      "arrivals": 63,
+      "closures": 85,
+      "backlog": 9961,
+      "aged30": 7727
+    },
+    "2025-03-24": {
+      "arrivals": 70,
+      "closures": 228,
+      "backlog": 9803,
+      "aged30": 7583
+    },
+    "2025-03-25": {
+      "arrivals": 97,
+      "closures": 301,
+      "backlog": 9599,
+      "aged30": 7390
+    },
+    "2025-03-26": {
+      "arrivals": 98,
+      "closures": 81,
+      "backlog": 9616,
+      "aged30": 7417
+    },
+    "2025-03-27": {
+      "arrivals": 100,
+      "closures": 204,
+      "backlog": 9512,
+      "aged30": 7322
+    },
+    "2025-03-28": {
+      "arrivals": 161,
+      "closures": 142,
+      "backlog": 9531,
+      "aged30": 7344
+    },
+    "2025-03-29": {
+      "arrivals": 80,
+      "closures": 0,
+      "backlog": 9611,
+      "aged30": 7448
+    },
+    "2025-03-30": {
+      "arrivals": 77,
+      "closures": 0,
+      "backlog": 9688,
+      "aged30": 7521
+    },
+    "2025-03-31": {
+      "arrivals": 81,
+      "closures": 84,
+      "backlog": 9685,
+      "aged30": 7543
+    }
+  },
+  "taxi_review_list": [
+    {
+      "unique_key": "59896371",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-01",
+      "age_days": "455"
+    },
+    {
+      "unique_key": "59895537",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-02",
+      "age_days": "454"
+    },
+    {
+      "unique_key": "59910978",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-02",
+      "age_days": "454"
+    },
+    {
+      "unique_key": "59949866",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-06",
+      "age_days": "450"
+    },
+    {
+      "unique_key": "59965197",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-08",
+      "age_days": "448"
+    },
+    {
+      "unique_key": "59990505",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-10",
+      "age_days": "446"
+    },
+    {
+      "unique_key": "60034576",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-01-15",
+      "age_days": "441"
+    },
+    {
+      "unique_key": "60077132",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-01-19",
+      "age_days": "437"
+    },
+    {
+      "unique_key": "60117140",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-01-23",
+      "age_days": "433"
+    },
+    {
+      "unique_key": "60130855",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-01-24",
+      "age_days": "432"
+    },
+    {
+      "unique_key": "60136039",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-25",
+      "age_days": "431"
+    },
+    {
+      "unique_key": "60141136",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-01-25",
+      "age_days": "431"
+    },
+    {
+      "unique_key": "60146495",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-01-26",
+      "age_days": "430"
+    },
+    {
+      "unique_key": "60215321",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-02-03",
+      "age_days": "422"
+    },
+    {
+      "unique_key": "60245258",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-02-05",
+      "age_days": "420"
+    },
+    {
+      "unique_key": "60264603",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-02-07",
+      "age_days": "418"
+    },
+    {
+      "unique_key": "60277906",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-02-09",
+      "age_days": "416"
+    },
+    {
+      "unique_key": "60279030",
+      "problem": "Taxi Complaint",
+      "borough": "MANHATTAN",
+      "created_day": "2024-02-09",
+      "age_days": "416"
+    },
+    {
+      "unique_key": "60286022",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-02-10",
+      "age_days": "415"
+    },
+    {
+      "unique_key": "60290207",
+      "problem": "Taxi Complaint",
+      "borough": "QUEENS",
+      "created_day": "2024-02-10",
+      "age_days": "415"
+    }
+  ]
+}

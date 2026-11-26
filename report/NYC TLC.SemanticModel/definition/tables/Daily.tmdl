@@ -1,0 +1,91 @@
+table Daily
+	lineageTag: bab1eb72-2ec2-4957-8385-dcf313ed10c9
+
+	measure Arrivals = SUM(Daily[Arrivals Raw])
+		formatString: #,0
+		lineageTag: 5d51374f-788a-497f-afbe-8631201e1d28
+
+	measure 'Recorded closures' = SUM(Daily[Closures Raw])
+		formatString: #,0
+		lineageTag: 48cb79f9-5449-4e80-8733-43aa958e5617
+
+	measure 'Net change' = [Arrivals] - [Recorded closures]
+		formatString: +#,0;-#,0;0
+		lineageTag: 21b78b58-e538-402b-be65-6a8cf3e145d7
+
+	measure 'Closing backlog' = VAR LastDay = MAX('Dates'[Date]) RETURN CALCULATE(SUM(Daily[Backlog Raw]), 'Dates'[Date] = LastDay)
+		formatString: #,0
+		lineageTag: 04970622-75fd-4b43-b5dd-8af6417a9c85
+
+	measure 'Aged 30+ cases' = VAR LastDay = MAX('Dates'[Date]) RETURN CALCULATE(SUM(Daily[Aged Raw]), 'Dates'[Date] = LastDay)
+		formatString: #,0
+		lineageTag: c5d768d1-1587-47c3-8ca0-fdadf4e1b464
+
+	measure 'Aged 30+ share' = DIVIDE([Aged 30+ cases], [Closing backlog])
+		formatString: 0.0%
+		lineageTag: 9b90e843-8447-4553-a97f-225438eab970
+
+	column Day
+		dataType: dateTime
+		isHidden
+		formatString: MMM d, yyyy
+		lineageTag: 7ca68aff-33b5-461f-9f1c-593961b5135b
+		summarizeBy: none
+		sourceColumn: day
+
+	column Problem
+		dataType: string
+		isHidden
+		lineageTag: 35ce8a9c-f24e-4a09-87b4-42216ab8d195
+		summarizeBy: none
+		sourceColumn: problem
+
+	column Borough
+		dataType: string
+		isHidden
+		lineageTag: eb3aecc2-e9c0-46b8-b148-a774b08e33bf
+		summarizeBy: none
+		sourceColumn: borough
+
+	column 'Arrivals Raw'
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: e1fe00be-3c54-43e4-8515-aae584f476f6
+		summarizeBy: none
+		sourceColumn: arrivals
+
+	column 'Closures Raw'
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 5b0e3eb3-5bfc-44fe-a392-10fb74ee2cf0
+		summarizeBy: none
+		sourceColumn: closures
+
+	column 'Backlog Raw'
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: fcf6631f-bb4f-4769-b40e-dc9f0916e56b
+		summarizeBy: none
+		sourceColumn: backlog
+
+	column 'Aged Raw'
+		dataType: int64
+		isHidden
+		formatString: #,0
+		lineageTag: 1c8ddb2f-fdae-4502-bb0a-a27f04ef88c8
+		summarizeBy: none
+		sourceColumn: aged30
+
+	partition Daily = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExportFolder & "\daily.csv"), [Delimiter = ",", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"day", type date}, {"problem", type text}, {"borough", type text}, {"arrivals", Int64.Type}, {"closures", Int64.Type}, {"backlog", Int64.Type}, {"aged30", Int64.Type}}, "en-US")
+				in
+				    Typed
+

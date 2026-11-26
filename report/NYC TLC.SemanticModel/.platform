@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "NYC TLC"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c286e78a-8939-5f4f-bc3d-9e96c06a012f"
+  }
+}

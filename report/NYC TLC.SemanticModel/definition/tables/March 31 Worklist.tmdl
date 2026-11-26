@@ -1,0 +1,46 @@
+table 'March 31 Worklist'
+	lineageTag: 9275853c-3f9f-4a35-a09b-5f83f7144648
+
+	column 'Request key'
+		dataType: string
+		isKey
+		lineageTag: d2e04dd4-baab-4111-8010-63c94fa8696e
+		summarizeBy: none
+		sourceColumn: unique_key
+
+	column Problem
+		dataType: string
+		lineageTag: 568980ea-a54a-480b-a755-e81f171aa416
+		summarizeBy: none
+		sourceColumn: problem
+
+	column Borough
+		dataType: string
+		lineageTag: c0490eb0-cc2a-4c54-9615-683eca73078e
+		summarizeBy: none
+		sourceColumn: borough
+
+	column 'Created date'
+		dataType: dateTime
+		formatString: MMM d, yyyy
+		lineageTag: 35768bf4-45f8-4afc-85a4-7de2c150cef9
+		summarizeBy: none
+		sourceColumn: created_day
+
+	column 'Age (days)'
+		dataType: int64
+		formatString: 0
+		lineageTag: f2861d39-cd79-48a3-86c8-b6b23ae4245f
+		summarizeBy: none
+		sourceColumn: age_days
+
+	partition 'March 31 Worklist' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ExportFolder & "\open_march31.csv"), [Delimiter = ",", Columns = 5, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"unique_key", type text}, {"problem", type text}, {"borough", type text}, {"created_day", type date}, {"age_days", Int64.Type}}, "en-US")
+				in
+				    Typed
+

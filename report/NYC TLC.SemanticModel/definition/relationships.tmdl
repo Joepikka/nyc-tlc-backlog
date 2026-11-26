@@ -1,0 +1,20 @@
+relationship dates_daily
+	fromColumn: Daily.Day
+	toColumn: Dates.Date
+
+relationship problem_daily
+	fromColumn: Daily.Problem
+	toColumn: Problem.Problem
+
+relationship problem_worklist
+	fromColumn: 'March 31 Worklist'.Problem
+	toColumn: Problem.Problem
+
+relationship borough_daily
+	fromColumn: Daily.Borough
+	toColumn: Borough.Borough
+
+relationship borough_worklist
+	fromColumn: 'March 31 Worklist'.Borough
+	toColumn: Borough.Borough
+
