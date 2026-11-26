@@ -1,5 +1,7 @@
 # NYC TLC service request backlog
 
+[Open the live dashboard](https://nyc-tlc-backlog.vercel.app/)
+
 **Review the 20 oldest open Taxi Complaint records.** Taxi Complaint took in 1,757 requests and gained 412 open cases during Q1 2025, the largest increase among TLC categories. For Hire Vehicle Complaint received 4,351 requests and reduced its backlog by 389. A supervisor can use the worklist to inspect the oldest cases and ask where recorded closure is slowing.
 
 ![Power BI queue health page showing the 9,685 closing backlog and the 412-case increase in Taxi Complaint](report/previews/queue-health.png)
@@ -55,3 +57,5 @@ The locally derived cohort matched an independent filtered API pull on all eight
 4. Use the supplied workbook or rebuild it with the bundled spreadsheet runtime by running `node scripts/make_worklist.mjs` in an environment that resolves `@oai/artifact-tool`. Rebuilding the workbook resets the three reviewer input columns.
 
 5. After regenerating the SQL exports and validation results, run `.\.venv\Scripts\python.exe scripts/build_web.py` to refresh the browser bundle. Run `node --test tests/test_dashboard.cjs` to compare dashboard totals and the review queue with the validated output.
+
+Vercel builds the production dashboard from `main`. Run `node scripts/build_site.cjs` to assemble the same static site locally in `dist/`.
